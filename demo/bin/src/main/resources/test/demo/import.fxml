@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane prefHeight="359.0" prefWidth="402.0" stylesheets="@styling.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane layoutX="-3.0" prefHeight="74.0" prefWidth="408.0" style="-fx-background-color: #52438F;" />
+      <Pane layoutX="131.0" layoutY="119.0" prefHeight="140.0" prefWidth="140.0" style="-fx-background-color: #F2F1F6; -fx-border-color: #C5C0D9; -fx-border-radius: 5;">
+         <children>
+            <ImageView layoutX="46.0" layoutY="46.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons/import.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Button layoutX="103.0" layoutY="301.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="200.0" text="import" textFill="#f8f8f8" />
+   </children>
+</AnchorPane>
