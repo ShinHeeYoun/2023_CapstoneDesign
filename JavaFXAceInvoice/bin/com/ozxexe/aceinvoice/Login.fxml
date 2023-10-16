@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="archRoot" prefHeight="400.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ozxexe.aceinvoice.LoginController">
+   <children>
+      <BorderPane prefHeight="400.0" prefWidth="800.0" style="-fx-background-color: #fff;">
+         <left>
+            <Pane prefHeight="400.0" prefWidth="400.0" style="-fx-background-color: #217346;" styleClass="linear-grad" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="150.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/icons8_invoice_100px.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="136.0" layoutY="200.0" text="GreenWaste" textFill="#e8e8e8">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="122.0" layoutY="229.0" text="task automation program" textFill="#c9c9c9">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <HBox layoutX="14.0" layoutY="14.0" spacing="5.0">
+                     <children>
+                        <Circle fx:id="btnClose" fill="#fc5d57" onMouseClicked="#handleMouseEvent" radius="6.0" stroke="WHITE" strokeType="INSIDE" />
+                        <Circle fill="#fdbb2d" radius="6.0" stroke="WHITE" strokeType="INSIDE" />
+                        <Circle fill="#27c941" radius="6.0" stroke="WHITE" strokeType="INSIDE" />
+                     </children>
+                  </HBox>
+               </children>
+            </Pane>
+         </left>
+         <center>
+            <StackPane fx:id="pnlStack" prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane fx:id="pnlSignUp" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #fff;">
+                     <children>
+                        <Button fx:id="btnMem" layoutX="201.0" layoutY="292.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="35.0" prefWidth="120.0" style="-fx-background-color: #217346;" styleClass="button1" text="Get Started" textFill="WHITE" />
+                        <TextField fx:id="txtMID" layoutX="78.0" layoutY="130.0" prefHeight="35.0" prefWidth="245.0" promptText="ID" />
+                        <Label layoutX="78.0" layoutY="87.0" text="Sign in">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <ImageView fx:id="btnBack" fitHeight="30.0" fitWidth="30.0" layoutX="63.0" layoutY="35.0" onMouseClicked="#handleMouseEvent" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons/icons8_back_30px.png" />
+                           </image>
+                        </ImageView>
+                        <PasswordField fx:id="txtMPW" layoutX="78.0" layoutY="183.0" prefHeight="35.0" prefWidth="245.0" promptText="Password" />
+                        <PasswordField fx:id="txtMPWC" layoutX="78.0" layoutY="235.0" prefHeight="35.0" prefWidth="245.0" promptText="PasswordConfirm" />
+                        <Button fx:id="btnIDC" layoutX="335.0" layoutY="130.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="35.0" prefWidth="51.0" style="-fx-background-color: #217346;" styleClass="button1" text="DCK" textFill="WHITE" />
+                        <ImageView fx:id="btnclose2" fitHeight="15.0" fitWidth="15.0" layoutX="379.0" layoutY="7.0" onMouseClicked="#handleMouseEvent" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons/icons8_close_30px.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="pnlSignIn" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #fff;">
+                     <children>
+                        <TextField fx:id="txtID" layoutX="76.0" layoutY="130.0" prefHeight="35.0" prefWidth="245.0" promptText="ID" />
+                        <PasswordField fx:id="txtPW" layoutX="78.0" layoutY="183.0" prefHeight="35.0" prefWidth="245.0" promptText="Password" />
+                        <Button fx:id="btnSignIn" layoutX="139.0" layoutY="234.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="35.0" prefWidth="120.0" style="-fx-background-color: #217346;" styleClass="button1" text="Sign in" textFill="WHITE" />
+                        <Button fx:id="btnSignUp" layoutX="78.0" layoutY="288.0" mnemonicParsing="false" onAction="#handleButtonAction" opacity="0.6" prefHeight="35.0" prefWidth="245.0" style="-fx-background-color: #2C801F;" styleClass="button2" text="Don't have an account? Sign up" textFill="WHITE" />
+                        <Label layoutX="74.0" layoutY="92.0" text="Sign in">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <ImageView fx:id="btnclose" fitHeight="15.0" fitWidth="15.0" layoutX="371.0" layoutY="14.0" onMouseClicked="#handleMouseEvent" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons/icons8_close_30px.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+               </children>
+            </StackPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

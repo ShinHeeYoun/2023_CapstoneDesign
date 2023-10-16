@@ -1,0 +1,226 @@
+.button
+{
+-fx-background-color : #217346;
+-fx-background-radius : 0em;
+}
+.button:hover
+{
+-fx-background-color : #9FCDB3;
+}
+.button:pressed
+{
+-fx-background-color : #3D7B59;
+}
+.button:focused{
+    -fx-background-color : #67A583;
+    -fx-border-color : #CDD1D6;
+    -fx-border-width: 0px 0px 0px 3px;
+}
+
+
+.button3{
+-fx-border-width: 0px 0px 0px 0px;
+-fx-background-color : #F3F2F1;
+}
+
+.button3:hover{
+    -fx-font-weight: bold;
+    -fx-background-color : #E1DFDD;
+    -fx-border-width: 0px 0px 0px 0px;
+}
+.button3:focused{
+    -fx-background-color : #F3F2F1;
+    -fx-border-color : #F3F2F1;
+    -fx-border-width: 0px 0px 0px 0px;
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+
+
+.button2
+{
+-fx-background-color : #FFFFFF;
+-fx-background-radius : 0em;
+-fx-border-color : #CDD1D6;
+-fx-border-width : 1px 1px 1px 1px;
+}
+.button2:hover
+{
+-fx-background-color : #EBE9F6;
+-fx-border-color : #CDD1D6;
+-fx-border-width : 1px 1px 1px 1px;
+}
+.button2:pressed
+{
+    -fx-background-color : #6F5CC2;
+}
+.button2:focused{
+    -fx-background-color : #6F5CC2;
+    -fx-text-fill: #FFFFFF;
+    -fx-background-radius : 1px 1px 1px 1px;
+}
+
+.table-view{
+-fx-border-color: #C8C8C8;
+}
+.table-view:focused{
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+.table-view .column-header,
+.table-view .column-header-background .filter {
+    -fx-cell-size : 20;
+    -fx-background-color: #FFFFFF;
+}
+.table-view .column-header .label{
+    -fx-text-fill: black;
+    -fx-alignment: CENTER_LEFT;
+}
+.table-view.cell{
+    -fx-cell-size: 30;
+    -fx-alignment: center-left;
+    -fx-text-fill: #000000;
+    -fx-alignment: CENTER_LEFT;
+}
+
+.table-row-cell.selected {
+    -fx-background-color: rgb(226,222,242);
+}
+.table-row-cell:selected .text{
+    -fx-fill: #52438F;
+}
+
+/* scroll bar starts */
+
+.table-view .increment-button, .table-view .decrement-button{
+    -fx-background-color:transparent;
+    -fx-background-radius: 2em;
+}
+
+.table-view .scroll-bar:horizontal .track,
+.table-view .scroll-bar:vertical .track{
+    -fx-background-color:transparent;
+    -fx-border-color:derive( #7156DD,80%);
+    -fx-background-radius: 2em;
+    -fx-border-radius: 2em;
+}
+
+.table-view .scroll-bar:horizontal .thumb,
+.table-view .scroll-bar:vertical .thumb{
+    -fx-border-color:derive( #7156DD,90%);
+    -fx-background-insets: 2,0,0;
+    -fx-background-radius: 2em;
+}
+ /* chart */
+.chart{
+    -fx-padding: 10px;
+    -fx-background-color:transparent;
+    -fx-legend-visible: true;
+    -fx-tick-label-font-size: 20px;
+}
+
+.chart-plot-background{
+    -fx-background-color:transparent;
+}
+
+.chart-pie{
+    -fx-border-color:derive(-fx-pie-color, 1%);
+    -fx-border-width: 0px;
+    -fx-border-color: #C8C8C8;
+}
+
+
+
+.tab-pane .tab-header-area .tab-header-background{
+    -fx-opacity: 0;
+}
+
+.tab-pane
+{
+    -fx-tab-min-width: 90px;
+    -fx-tab-min-height: 30px;
+}
+
+.tab
+{
+    -fx-background-insets: 0 0 0 0,0,0;
+    -fx-background-color: white;
+
+}
+
+.tab-pane, tab
+{
+    -fx-background-color: #FFFFFF;
+}
+.tab-pane:focused .tab:selected .focus-indicator {
+    -fx-border-width: 0 ;
+    -fx-border-color: transparent;
+    -fx-border-insets: 0;
+    -fx-border-radius: 0;
+}
+
+.tab-pane .tab:selected
+{
+    -fx-background-color: white;
+    -fx-text-fill: black;
+    -fx-border-color : transparent #C8C8C8 #217346 #C8C8C8;
+    -fx-border-width: 0px 0px 2px 0px;
+}
+
+
+
+.tab .tab-label{
+    -fx-alignment: CENTER;
+    -fx-text-fill: black;
+}
+
+.tab:selected .tab-label{
+    -fx-alignment: CENTER;
+    -fx-text-fill: black;
+}
+
+.chart-line-symbol {
+    -fx-font-size: 20px;
+}
+
+.text-field {
+    -fx-background-color:white;
+    -fx-border-color : transparent transparent #E6E6EA transparent;
+
+}
+
+.text-field:focused {
+    -fx-border-color: transparent transparent #66ABF0 transparent;
+    -fx-highlight-fill: #7ecfff;
+}
+
+.text-area {
+    -fx-background-insets: 0;
+    -fx-background-color: #D5D5D8, transparent;
+}
+
+.text-area .content {
+    -fx-background-color: transparent, white, transparent, white;
+}
+
+.text-area:focused .content {
+    -fx-background-color: transparent, white, transparent, white;
+}
+
+.text-area:focused {
+    -fx-highlight-fill: #7ecfff;
+}
+
+.text-area .content {
+    -fx-padding: 10px;
+    -fx-text-fill: gray;
+    -fx-highlight-fill: #7ecfff;
+}
+
+.scroll-pane > .viewport {
+   -fx-background-color: transparent;
+}
+
+#anchorPaneAttach{
+-fx-background-color:white;
+}
