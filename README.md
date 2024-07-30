@@ -8,5 +8,5 @@ UI was developed with java, and internal functions were developed with Excel VBA
 
  ### 시연영상
 https://youtu.be/cO4pshnCU8Q
-
+https://youtu.be/kwMiH0_sgek (자막버전)
 https://clipchamp.com/watch/35EchumMMWb
